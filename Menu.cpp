@@ -1,8 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <iomanip>
 #include <iostream>
+#include <iomanip>
 #include <ctime>
-#include <cstring>
+#include <string.h>
 #include "Menu.h"
 
 using namespace std;
@@ -45,9 +45,6 @@ ostream& Menu::display(ostream& os) const {
 
 	//Display title.
 	displayTitle();
-	if (m_title.m_content != nullptr) {
-		os << ":" << endl;
-	}
 
 	//Display all the MenuItems one by one.
 	for (int ndx = 0; ndx < m_noMenuItems; ndx++) {
@@ -70,7 +67,6 @@ unsigned int Menu::run() {
 
 		//If input is invalid, then display error message and loop again.
 		do {
-			
 			//Get input from user.
 			cin >> select;
 			
@@ -146,6 +142,7 @@ const char* Menu::operator[](int ndx) const {
 	}
 	return "";
 }
+
 
 //////////Private function of MenuItem Class//////////
 

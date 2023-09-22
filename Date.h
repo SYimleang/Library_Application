@@ -1,5 +1,5 @@
-#ifndef DATE_H__
-#define DATE_H__
+#ifndef DATE_H_
+#define DATE_H_
 #include <iostream>
 
 const int NO_ERROR = 0;
@@ -55,4 +55,4 @@ public:
 std::ostream& operator<<(std::ostream& os, const Date& RO);
 std::istream& operator>>(std::istream& is, Date& RO);
 
-#endif
+#endif //!DATE_H_
