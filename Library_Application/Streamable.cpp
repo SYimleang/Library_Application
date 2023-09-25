@@ -7,7 +7,6 @@ Streamable::~Streamable() {}
 
 /* Overload extraction operator to print content from draw() function in the Shape class. */
 std::ostream& operator<<(std::ostream& os, const Streamable& ins) {
-
 	if (ins) {
 		ins.write(os);
 	}

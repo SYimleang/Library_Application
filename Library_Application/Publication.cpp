@@ -102,36 +102,41 @@ int Publication::getRef()const {
 
 /* Returns true if the address of the io object is the same as the address of either the cin object or the cout object. */
 bool Publication::conIO(std::ios& io)const {
-	return &io == &std::cin || &io == &std::cout;
+return &io == &std::cin || &io == &std::cout;
 }
 
 /* If the os argument is a console IO object, print shelfId, title, membership and date attributes. */
 std::ostream& Publication::write(std::ostream& os) const {
 
-	// Check if address of io object is same as receive os. Then print as format.
-	if (conIO(os)) {
-		os << "| " << m_shelfId << " | " << std::setw(TITLE_WIDTH) << std::left << std::setfill('.') << m_title << " | ";
-		if (m_membership == 0) {
-			os << " N/A ";
-		}
-		else {
-			os << m_membership;
-		}
-		os << " | " << m_date << " |";
-	}
+	// Create the temporary string to hold only 30 characters of title name, Then copy the title name.
+		char t_title[31];
+		strncpy(t_title, m_title, 30);
+		t_title[30] = '\0';
 
-	// If address is not same, then print as no exist format.
-	else {
-		os << type() << m_libRef << "\t" << m_shelfId << "\t" << m_title << "\t";
-		if (m_membership == 0) {
-			os << " N/A ";
+		// Check if address of io object is same as receive os. Then print as format.
+		if (conIO(os)) {
+			os << "| " << m_shelfId << " | " << std::setw(30) << std::left << std::setfill('.') << t_title << " | ";
+			if (m_membership == 0) {
+				os << " N/A ";
+			}
+			else {
+				os << m_membership;
+			}
+			os << " | " << m_date << " |";
 		}
+
+		// If address is not same, then print as no exist format.
 		else {
-			os << m_membership;
+			os << type() << m_libRef << "\t" << m_shelfId << "\t" << m_title << "\t";
+			if (m_membership == 0) {
+				os << " N/A ";
+			}
+			else {
+				os << m_membership;
+			}
+			os << "\t" << m_date;
 		}
-		os << "\t" << m_date;
-	}
-	return os;
+		return os;
 }
 
 /* Read all the values in local variables before setting the attributes to any values. */

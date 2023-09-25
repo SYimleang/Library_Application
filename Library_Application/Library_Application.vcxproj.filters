@@ -33,6 +33,9 @@
     <ClCompile Include="Streamable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Book.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Date.h">
@@ -53,6 +56,9 @@
     <ClInclude Include="Streamable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Book.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Periodicals.txt">
@@ -61,5 +67,7 @@
     <Text Include="PeriodicalsOriginal.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="Books.txt" />
+    <Text Include="BooksOriginal.txt" />
   </ItemGroup>
 </Project>

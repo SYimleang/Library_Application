@@ -50,9 +50,13 @@ void Date::errCode(int readErrorCode) {
 
 /*Returns the current system year.*/
 int Date::systemYear()const {
-    time_t t = time(NULL);
-    tm lt = *localtime(&t);
-    return lt.tm_year + 1900;
+    int theYear = year;
+    if (!test) {
+        time_t t = time(NULL);
+        tm lt = *localtime(&t);
+        theYear = lt.tm_year + 1900;
+    }
+    return theYear;
 }
 
 /*Returns true if the Date is in an erroneous state.*/

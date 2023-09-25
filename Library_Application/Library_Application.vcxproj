@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Book.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="LibApp.cpp" />
     <ClCompile Include="Menu.cpp" />
@@ -135,6 +136,7 @@
     <ClCompile Include="tester.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Book.h" />
     <ClInclude Include="Date.h" />
     <ClInclude Include="Lib.h" />
     <ClInclude Include="LibApp.h" />
@@ -143,6 +145,8 @@
     <ClInclude Include="Streamable.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Books.txt" />
+    <Text Include="BooksOriginal.txt" />
     <Text Include="Periodicals.txt" />
     <Text Include="PeriodicalsOriginal.txt" />
   </ItemGroup>
