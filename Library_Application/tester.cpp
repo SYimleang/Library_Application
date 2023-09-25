@@ -25,7 +25,7 @@ Book getNextRec(std::ifstream& ifstr) {
 int main() {
    test = true;
    Book pd;
-   fcopy( "Books.txt", "BooksOriginal.txt" );
+   fcopy( "./source_files/Books.txt", "./source_files/BooksOriginal.txt" );
    std::cout << "An Invalid Book printout:" << std::endl;
    std::cout << ">" << pd << "<" << std::endl;
    std::cout << std::endl << "Enter the following: " << std::endl
@@ -76,14 +76,14 @@ int main() {
       std::cout << "----------------------------------------------------------------" << std::endl;
     }
    std::cout << "Adding the Book to the end of the data file:" << std::endl;
-   std::ofstream fileout("Books.txt", std::ios::app);
+   std::ofstream fileout("./source_files/Books.txt", std::ios::app);
    if (pd) {
       std::cout << "appeneded to the file" << std::endl;
       fileout << pd << std::endl;
    }
    fileout.close();
    std::cout << std::endl << "Contents of the file:" << std::endl;
-   std::ifstream filein("Books.txt");
+   std::ifstream filein("./source_files/Books.txt");
    char pType{};
    for (int row = 1; filein; row++) {
       filein >> pType;
