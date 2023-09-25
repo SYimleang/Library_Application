@@ -25,7 +25,7 @@ Publication getNextRec(std::ifstream& ifstr) {
 int main() {
    test = true;
    Publication pd;
-   fcopy( "Periodicals.txt", "PeriodicalsOriginal.txt" );
+   fcopy( "./source_files/Periodicals.txt", "./source_files/PeriodicalsOriginal.txt" );
    std::cout << "An Invalid publication printout:" << std::endl;
    std::cout << ">" << pd << "<" << std::endl;
    std::cout << "Enter the following: " << std::endl
@@ -76,14 +76,14 @@ int main() {
       std::cout << "----------------------------------------------------------------" << std::endl;
     }
    std::cout << "Adding the periodical publication to the end of the data file:" << std::endl;
-   std::ofstream fileout("Periodicals.txt", std::ios::app);
+   std::ofstream fileout("./source_files/Periodicals.txt", std::ios::app);
    if (pd) {
       std::cout << "appeneded to the file" << std::endl;
       fileout << pd << std::endl;
    }
    fileout.close();
    std::cout << std::endl << "Contents of the file:" << std::endl;
-   std::ifstream filein("Periodicals.txt");
+   std::ifstream filein("./source_files/Periodicals.txt");
    char pType{};
    for (int row = 1; filein; row++) {
       filein >> pType;
