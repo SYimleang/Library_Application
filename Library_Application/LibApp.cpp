@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include "LibApp.h"
-using namespace std;
 
 bool LibApp::confirm(const char* message) {
 
@@ -14,44 +13,44 @@ bool LibApp::confirm(const char* message) {
 
 /* Print loading message.*/
 void LibApp::load() {
-	cout << "Loading Data" << endl;
+	std::cout << "Loading Data" << std::endl;
 }
 
 /* Print saving message.*/
 void LibApp::save() {
-	cout << "Saving Data" << endl;
+	std::cout << "Saving Data" << std::endl;
 }
 
 /* Print searching message.*/
 void LibApp::search() {
-	cout << "Searching for publication" << endl;
+	std::cout << "Searching for publication" << std::endl;
 }
 
 /*Call search() method and print return status message.*/
 void LibApp::returnPub() {
 	search();
-	cout << "Returning publication" << endl;
-	cout << "Publication returned" << endl;
-	cout << endl;
+	std::cout << "Returning publication" << std::endl;
+	std::cout << "Publication returned" << std::endl;
+	std::cout << std::endl;
 	m_changed = true;
 }
 
 /* Adding new publication to library method.*/
 void LibApp::newPublication() {
 	m_changed = false;
-	cout << "Adding new publication to library" << endl;
+	std::cout << "Adding new publication to library" << std::endl;
 
 	//If confirm method return true, then sets m_changed to true.
 	if (confirm("Add this publication to library?")) {
 		m_changed = true;
-		cout << "Publication added" << endl;
+		std::cout << "Publication added" << std::endl;
 	}
-	cout << endl;
+	std::cout << std::endl;
 }
 
 /* Remove publication from library method.*/
 void LibApp::removePublication() {
-	cout << "Removing publication from library" << endl;
+	std::cout << "Removing publication from library" << std::endl;
 	m_changed = false;
 	//Searching for the publication from library.
 	search();
@@ -59,9 +58,9 @@ void LibApp::removePublication() {
 	//If confirm method return true, then sets m_changed to true.
 	if (confirm("Remove this publication from the library?")) {
 		m_changed = true;
-		cout << "Publication removed" << endl;
+		std::cout << "Publication removed" << std::endl;
 	}
-	cout << endl;
+	std::cout << std::endl;
 }
 
 /* Check out publication method.*/
@@ -74,9 +73,9 @@ void LibApp::checkOutPub() {
 	//If confirm method return true, then sets m_changed to true.
 	if (confirm("Check out publication?")) {
 		m_changed = true;
-		cout << "Publication checked out" << endl;
+		std::cout << "Publication checked out" << std::endl;
 	}
-	cout << endl;
+	std::cout << std::endl;
 }
 
 /* Default Constructor. Initialize default messages for main menu and exit menu.*/
@@ -137,13 +136,13 @@ void LibApp::run() {
 				exitSelect = m_exitMenu.run();
 				if (exitSelect == 1) {			// If user selected 1, then call save() method. Then exit the program.
 					save();
-					cout << endl;
-					cout << "-------------------------------------------" << endl;
-					cout << "Thanks for using Library Application" << endl;
+					std::cout << std::endl;
+					std::cout << "-------------------------------------------" << std::endl;
+					std::cout << "Thanks for using Library Application" << std::endl;
 					flag = true;
 				}
 				else if (exitSelect == 2) {		// If user selected 2, then keep continue the loop.
-					cout << endl;
+					std::cout << std::endl;
 				}	
 
 				// If user selected something else.
@@ -151,17 +150,17 @@ void LibApp::run() {
 
 					// Ask user to confirm to discard all the change. If yes, program will discard the change and exit the program.
 					if (confirm("This will discard all the changes are you sure?")) {
-						cout << endl;
-						cout << "-------------------------------------------" << endl;
-						cout << "Thanks for using Library Application" << endl;
+						std::cout << std::endl;
+						std::cout << "-------------------------------------------" << std::endl;
+						std::cout << "Thanks for using Library Application" << std::endl;
 						flag = true;
 					}
 				}
 			}
 			else {
-				cout << endl;
-				cout << "-------------------------------------------" << endl;
-				cout << "Thanks for using Library Application" << endl;
+				std::cout << std::endl;
+				std::cout << "-------------------------------------------" << std::endl;
+				std::cout << "Thanks for using Library Application" << std::endl;
 				flag = true;
 
 			}

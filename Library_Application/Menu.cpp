@@ -5,8 +5,6 @@
 #include <string.h>
 #include "Menu.h"
 
-using namespace std;
-
 //////////Private function of Menu Class//////////
 
 /* Default Constructor. Created empty Menu with no MenuItems and zero number of item.*/
@@ -32,7 +30,7 @@ Menu::~Menu() {
 }
 
 /* Display the title of the Menu on ostream if the title is not empty.*/
-ostream& Menu::displayTitle(ostream& os) const {
+std::ostream& Menu::displayTitle(std::ostream& os) const {
 
 	if (m_title.m_content != nullptr) {
 		os << m_title.m_content;
@@ -41,18 +39,18 @@ ostream& Menu::displayTitle(ostream& os) const {
 }
 
 /* Display the entire Menu on ostream.*/
-ostream& Menu::display(ostream& os) const {
+std::ostream& Menu::display(std::ostream& os) const {
 
 	//Display title.
 	displayTitle();
 
 	//Display all the MenuItems one by one.
 	for (int ndx = 0; ndx < m_noMenuItems; ndx++) {
-		os << setw(2) << setfill(' ') << ndx + 1 << "- ";
+		os << std::setw(2) << std::setfill(' ') << ndx + 1 << "- ";
 		(*m_menuItem[ndx]).display(os);
-		os << endl;
+		os << std::endl;
 	}
-	os << setw(2) << setfill(' ') << "0" << "- Exit" << endl;
+	os << std::setw(2) << std::setfill(' ') << "0" << "- Exit" << std::endl;
 	os << "> ";
 
 	return os;
@@ -68,15 +66,15 @@ unsigned int Menu::run() {
 		//If input is invalid, then display error message and loop again.
 		do {
 			//Get input from user.
-			cin >> select;
+			std::cin >> select;
 			
-			if (select < 0 || select > (unsigned)m_noMenuItems || cin.fail()) {
-				cin.clear();
-				cin.ignore(1000, '\n');
+			if (select < 0 || select > (unsigned)m_noMenuItems || std::cin.fail()) {
+				std::cin.clear();
+				std::cin.ignore(1000, '\n');
 				select = -1;
-				cout << "Invalid Selection, try again: ";
+				std::cout << "Invalid Selection, try again: ";
 			}
-		} while (select < 0 || select >(unsigned)m_noMenuItems || cin.fail());
+		} while (select < 0 || select >(unsigned)m_noMenuItems || std::cin.fail());
 	
 	return select;
 }
@@ -125,7 +123,7 @@ Menu::operator bool() const {
 }
 
 /* Overload the insertion operator to print the title of the Menu using cout.*/
-ostream& operator<<(ostream& os, const Menu& menu){
+std::ostream& operator<<(std::ostream& os, const Menu& menu){
 	if (menu.m_noMenuItems > 0) {
 		menu.displayTitle(os);
 	}
@@ -182,7 +180,7 @@ MenuItem::operator const char*() const{
 }
 
 /* Display the content of the MenuItem on ostream.*/
-ostream& MenuItem::display(ostream& os) const {
+std::ostream& MenuItem::display(std::ostream& os) const {
 
 	if (validate()) {
 		os << m_content;

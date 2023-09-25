@@ -4,7 +4,11 @@
 #include <ctime>
 #include "Date.h"
 
-using namespace std;
+// Global variable (for testing purposes).
+    bool test = false;
+    int year = 2023;
+    int mon = 12;
+    int day = 25;
 
 //////////Private function of Date Class//////////
 
@@ -31,7 +35,7 @@ bool Date::validate() {
     else if (m_mon < 1 || m_mon > 12) {
         errCode(MON_ERROR);
     }
-    else if (m_day < 1 || m_day > mdays()) {
+    else if (m_day < 1 || m_day > mDays()) {
         errCode(DAY_ERROR);
     }
 
@@ -57,7 +61,7 @@ bool Date::bad()const {
 }
 
 /*Returns the number of days in current month(the month stored in m_mon attribute)*/
-int Date::mdays()const {
+int Date::mDays()const {
     int days[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31, -1 };
     int mon = m_mon >= 1 && m_mon <= 12 ? m_mon : 13;
     mon--;
@@ -66,12 +70,19 @@ int Date::mdays()const {
 
 /*Sets the date to the current date(system date)*/
 void Date::setToToday() {
-    time_t t = time(NULL);
-    tm lt = *localtime(&t);
-    m_day = lt.tm_mday;
-    m_mon = lt.tm_mon + 1;
-    m_year = lt.tm_year + 1900;
-    errCode(NO_ERROR);
+    if (test) {
+           m_day = day;
+           m_mon = mon;
+           m_year = year;
+       }
+       else {
+           time_t t = time(NULL);
+           tm lt = *localtime(&t);
+           m_day = lt.tm_mday;
+           m_mon = lt.tm_mon + 1;
+           m_year = lt.tm_year + 1900;
+       }
+       errCode(NO_ERROR);
 }
 
 //////////Public function of Date Class//////////
@@ -105,7 +116,7 @@ int Date::currentYear()const {
 }
 
 /*This function reads a date from the console in the following format YYYY/MM/DD */
-istream& Date::read(istream& is) {
+std::istream& Date::read(std::istream& is) {
     //Sets errCode to "0"
     errCode(NO_ERROR);
 
@@ -130,15 +141,12 @@ istream& Date::read(istream& is) {
         is.ignore();
     }
 
-    //Flushes the keyboard.
-    is.ignore(1000, '\n');
-
     //Return the istream object.
     return is;
 }
 
 /*This function writes a date in the following format YYYY/MM/DD*/
-ostream& Date::write(ostream& os)const {
+std::ostream& Date::write(std::ostream& os)const {
 
     //If Date is in "bad" state, then print the date status.
     if (bad()) {
@@ -146,9 +154,9 @@ ostream& Date::write(ostream& os)const {
     }
     //If is valid, then print in the format.
     else {
-        os << setw(4) << setfill('0') << m_year << '/'
-            << setw(2) << setfill('0') << m_mon << '/'
-            << setw(2) << setfill('0') << m_day;
+        os << std::setw(4) << std::setfill('0') << m_year << '/'
+            << std::setw(2) << std::setfill('0') << m_mon << '/'
+            << std::setw(2) << std::setfill('0') << m_day;
     }
     return os;
 }
@@ -198,11 +206,11 @@ Date::operator bool() const {
 
 //////////Helper Operator//////////
 /*Overload helper operator "<<". This function will call write function.*/
-ostream& operator<<(ostream& os, const Date& RO) {
+std::ostream& operator<<(std::ostream& os, const Date& RO) {
     return RO.write(os);
 }
 
 /*Overload helper operator "<<". This function will call read function.*/
-istream& operator>>(istream& is, Date& RO) {
+std::istream& operator>>(std::istream& is, Date& RO) {
     return RO.read(is);
 }

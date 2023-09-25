@@ -29,7 +29,7 @@ private:
    void errCode(int);           // sets the error code
    int systemYear()const;       // returns the current system year
    bool bad()const;             // return true if
-   int mdays()const;            // returns the number of days in current month
+   int mDays()const;            // returns the number of days in current month
    void setToToday();           // sets the date to the current date (system date)
 public:
    Date();                      // creates a date with current date
@@ -54,5 +54,11 @@ public:
 };
 std::ostream& operator<<(std::ostream& os, const Date& RO);
 std::istream& operator>>(std::istream& is, Date& RO);
+
+// Make the global variables added to Date.cpp, truly global for any code including "Date.h".
+   extern bool test;
+   extern int year;
+   extern int mon;
+   extern int day;
 
 #endif //!DATE_H_

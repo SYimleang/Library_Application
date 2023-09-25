@@ -130,12 +130,21 @@
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="LibApp.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Publication.cpp" />
+    <ClCompile Include="Streamable.cpp" />
     <ClCompile Include="tester.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Date.h" />
+    <ClInclude Include="Lib.h" />
     <ClInclude Include="LibApp.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="Publication.h" />
+    <ClInclude Include="Streamable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Periodicals.txt" />
+    <Text Include="PeriodicalsOriginal.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
