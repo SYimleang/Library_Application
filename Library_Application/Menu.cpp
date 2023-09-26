@@ -33,7 +33,7 @@ Menu::~Menu() {
 std::ostream& Menu::displayTitle(std::ostream& os) const {
 
 	if (m_title.m_content != nullptr) {
-		os << m_title.m_content;
+		os << m_title.m_content << std::endl;
 	}
 	return os;
 }

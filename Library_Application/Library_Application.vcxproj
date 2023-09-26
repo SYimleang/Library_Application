@@ -130,10 +130,11 @@
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="LibApp.cpp" />
+    <ClCompile Include="LibAppMain.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Publication.cpp" />
+    <ClCompile Include="PublicationSelector.cpp" />
     <ClCompile Include="Streamable.cpp" />
-    <ClCompile Include="tester.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h" />
@@ -142,6 +143,7 @@
     <ClInclude Include="LibApp.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Publication.h" />
+    <ClInclude Include="PublicationSelector.h" />
     <ClInclude Include="Streamable.h" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +151,10 @@
     <Text Include="BooksOriginal.txt" />
     <Text Include="Periodicals.txt" />
     <Text Include="PeriodicalsOriginal.txt" />
+    <Text Include="resource_files\LibRecs.txt" />
+    <Text Include="resource_files\LibRecsSmall.txt" />
+    <Text Include="resource_files\origLibRecs.txt" />
+    <Text Include="resource_files\origLibRecsSmall.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

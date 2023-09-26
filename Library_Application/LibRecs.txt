@@ -1,0 +1,333 @@
+B1001	C544	The Hobbit	35277	2023/07/14	J. R. R. Tolkien
+B1002	D208	Harry Potter and the Philosopher's Stone	72685	2023/07/19	J. K. Rowling
+B1003	N576	The Little Prince	96745	2023/07/19	Antoine de Saint/Exupry
+B1004	R420	Dream of the Red Chamber	87691	2023/07/24	Cao Xueqin
+B1005	R393	And Then There Were None	35526	2023/07/12	Agatha Christie
+B1006	P380	The Lion/ the Witch and the Wardrobe	 N/A 	2023/07/18	C. S. Lewis
+B1007	U264	She: A History of Adventure	 N/A 	2023/07/11	H. Rider Haggard
+B1008	S945	The Adventures of Pinocchio	 N/A 	2023/07/18	Carlo Collodi
+B1009	U818	The Da Vinci Code	 N/A 	2023/07/19	Dan Brown
+B1010	F861	Harry Potter and the Chamber of Secrets	 N/A 	2023/07/24	J. K. Rowling
+B1011	R856	Harry Potter and the Prisoner of Azkaban	 N/A 	2023/07/10	J. K. Rowling
+B1012	C945	Harry Potter and the Goblet of Fire	 N/A 	2023/07/14	J. K. Rowling
+B1013	L290	Harry Potter and the Order of the Phoenix	 N/A 	2023/07/11	J. K. Rowling
+B1014	C332	Harry Potter and the Half/Blood Prince	85952	2023/07/22	J. K. Rowling
+B1015	C872	Harry Potter and the Deathly Hallows	64984	2023/07/17	J. K. Rowling
+B1016	Y686	The Alchemist	63288	2023/07/10	Paulo Coelho
+B1017	E147	The Catcher in the Rye	90607	2023/07/19	J. D. Salinger
+P1018	P002	The Toronto SUN	85176	2023/07/17
+P1019	P002	The Toronto SUN	28146	2023/07/11
+P1020	P002	The Toronto SUN	 N/A 	2023/07/24
+P1021	P002	The Toronto SUN	23427	2023/07/18
+P1022	P002	The Toronto SUN	22084	2023/07/17
+P1023	P002	The Toronto SUN	63895	2023/07/25
+P1024	P002	The Toronto SUN	 N/A 	2023/07/18
+P1025	P002	The Toronto SUN	85033	2023/07/22
+P1026	P002	The Toronto SUN	21536	2023/07/15
+P1027	P002	The Toronto SUN	 N/A 	2023/07/18
+P1028	P002	The Toronto SUN	39638	2023/07/23
+P1029	P002	The Toronto SUN	63671	2023/07/12
+P1030	P002	The Toronto SUN	 N/A 	2023/07/12
+P1031	P002	The Toronto SUN	44716	2023/07/20
+P1032	P002	The Toronto SUN	58452	2023/07/16
+P1033	P002	The Toronto SUN	 N/A 	2023/07/17
+P1034	P002	The Toronto SUN	67138	2023/07/17
+P1035	P002	The Toronto SUN	58790	2023/07/11
+P1036	P002	The Toronto SUN	71094	2023/07/24
+P1037	P002	The Toronto SUN	 N/A 	2023/07/18
+P1038	P002	The Toronto SUN	91776	2023/07/17
+P1039	P002	The Toronto SUN	60740	2023/07/25
+P1040	P002	The Toronto SUN	33219	2023/07/18
+P1041	P002	The Toronto SUN	 N/A 	2023/07/22
+P1042	P002	The Toronto SUN	45379	2023/07/15
+P1043	P002	The Toronto SUN	12208	2023/07/18
+P1044	P002	The Toronto SUN	36345	2023/07/23
+P1045	P002	The Toronto SUN	42016	2023/07/12
+P1046	P002	The Toronto SUN	 N/A 	2023/07/12
+P1047	P002	The Toronto SUN	92784	2023/07/20
+B1048	N518	The Bridges of Madison County	15467	2023/07/14	Robert James Waller
+B1049	U215	Ben/Hur: A Tale of the Christ	71498	2023/07/19	Lew Wallace
+B1050	L200	You Can Heal Your Life	33507	2023/07/18	Louise Hay
+B1051	W571	One Hundred Years of Solitude	14022	2023/07/24	Gabriel Garca Mrquez
+B1052	E655	Lolita	96706	2023/07/22	Vladimir Nabokov
+B1053	J846	Heidi	16990	2023/07/23	Johanna Spyri
+B1054	E869	The Common Sense Book of Baby and Child Care	80854	2023/07/24	Benjamin Spock
+B1055	L667	Anne of Green Gables	51189	2023/07/24	Lucy Maud Montgomery
+B1056	Y627	Black Beauty	43657	2023/07/18	Anna Sewell
+B1057	D619	The Name of the Rose	22397	2023/07/10	Umberto Eco
+B1058	N537	The Eagle Has Landed	 N/A 	2023/07/16	Jack Higgins
+B1059	H405	Watership Down	 N/A 	2023/07/23	Richard Adams
+B1060	H859	The Hite Report	 N/A 	2023/07/13	Shere Hite
+B1061	Z192	Charlotte's Web	 N/A 	2023/07/17	E. B. White; illustrated byGarth Williams
+B1062	V718	The Tale of Peter Rabbit	 N/A 	2023/07/12	Beatrix Potter
+B1063	Z248	Jonathan Livingston Seagull	 N/A 	2023/07/21	Richard Bach
+B1064	B236	The Very Hungry Caterpillar	 N/A 	2023/07/12	Eric Carle
+B1065	T223	A Message to Garcia	 N/A 	2023/07/24	Elbert Hubbard
+B1066	U846	To Kill a Mockingbird	45511	2023/07/21	Harper Lee
+B1067	F676	Flowers in the Attic	85381	2023/07/14	V. C. Andrews
+B1068	Q353	Cosmos	33904	2023/07/19	Carl Sagan
+B1069	U737	Sophie's World	60897	2023/07/12	Jostein Gaarder
+B1070	T273	Angels & Demons	51481	2023/07/22	Dan Brown
+B1071	M309	Kane and Abel	82568	2023/07/19	Jeffrey Archer
+B1072	J579	How the Steel Was Tempered	34668	2023/07/17	Nikolai Ostrovsky
+B1073	I325	War and Peace	 N/A 	2023/07/24	Leo Tolstoy
+B1074	B663	The Diary of Anne Frank	 N/A 	2023/07/22	Anne Frank
+B1075	M760	Your Erroneous Zones	 N/A 	2023/07/13	Wayne Dyer
+B1076	W525	The Thorn Birds	 N/A 	2023/07/14	Colleen McCullough
+B1077	Z305	The Purpose Driven Life	 N/A 	2023/07/19	Rick Warren
+B1078	F282	The Kite Runner	 N/A 	2023/07/11	Khaled Hosseini
+B1079	L141	Valley of the Dolls	 N/A 	2023/07/20	Jacqueline Susann
+B1080	V843	The Great Gatsby	 N/A 	2023/07/24	F. Scott Fitzgerald
+B1081	Z611	Gone with the Wind	95732	2023/07/25	Margaret Mitchell
+B1082	Q378	Rebecca	66619	2023/07/11	Daphne du Maurier
+B1083	M413	Nineteen Eighty/Four	34208	2023/07/17	George Orwell
+B1084	K496	The Revolt of Mamie Stover	53331	2023/07/25	William Bradford Huie
+B1085	J587	The Girl with the Dragon Tattoo	17660	2023/07/17	Stieg Larsson
+B1086	O930	The Lost Symbol	51773	2023/07/21	Dan Brown
+B1087	D427	The Hunger Games	52280	2023/07/23	Suzanne Collins
+B1088	S924	James and the Giant Peach	 N/A 	2023/07/22	Roald Dahl
+B1089	E662	The Young Guard	 N/A 	2023/07/17	Alexander Alexandrovich Fadeyev
+B1090	E866	Who Moved My Cheese?	 N/A 	2023/07/10	Spencer Johnson
+B1091	Q413	A Brief History of Time	 N/A 	2023/07/18	Stephen Hawking
+B1092	N114	Paul et Virginie	 N/A 	2023/07/17	Jacques/Henri Bernardin de Saint/Pierre
+P1093	P008	Canadian Running Magazine	77051	2023/07/25
+P1094	P008	Canadian Running Magazine	 N/A 	2023/07/18
+P1095	P008	Canadian Running Magazine	86255	2023/07/22
+P1096	P008	Canadian Running Magazine	 N/A 	2023/07/15
+P1097	P008	Canadian Running Magazine	46886	2023/07/18
+P1098	P008	Canadian Running Magazine	 N/A 	2023/07/23
+P1099	P008	Canadian Cycling Magazine	21655	2023/07/12
+P1100	P008	Canadian Cycling Magazine	64198	2023/07/12
+P1101	P008	Canadian Cycling Magazine	 N/A 	2023/07/20
+P1102	P008	Canadian Cycling Magazine	53448	2023/07/16
+P1103	P008	Canadian Cycling Magazine	59523	2023/07/17
+P1104	P008	Canadian Cycling Magazine	 N/A 	2023/07/17
+P1105	P008	Canadian Cycling Magazine	40289	2023/07/11
+B1106	O655	Lust for Life	 N/A 	2023/07/16	Irving Stone
+B1107	W675	The Wind in the Willows	 N/A 	2023/07/20	Kenneth Grahame
+B1108	K349	The 7 Habits of Highly Effective People	 N/A 	2023/07/18	Stephen R. Covey
+B1109	Q968	Virgin Soil Upturned	46394	2023/07/18	Mikhail Sholokhov
+B1110	Y690	The Celestine Prophecy	88238	2023/07/16	James Redfield
+B1111	L480	The Fault in Our Stars	31647	2023/07/12	John Green
+B1112	V829	The Girl on the Train	26056	2023/07/14	Paula Hawkins
+B1113	K360	The Shack	20029	2023/07/18	William P. Young
+B1114	O701	Uncle Styopa	73994	2023/07/18	Sergey Mikhalkov
+B1115	Y150	The Godfather	14732	2023/07/11	Mario Puzo
+B1116	I780	Love Story	46975	2023/07/23	Erich Segal
+B1117	J808	Catching Fire	 N/A 	2023/07/13	Suzanne Collins
+B1118	X943	Mockingjay	 N/A 	2023/07/21	Suzanne Collins
+B1119	Y443	Kitchen	 N/A 	2023/07/24	Banana Yoshimoto
+B1120	H141	Andromeda Nebula	 N/A 	2023/07/17	Ivan Yefremov
+B1121	E807	Autobiography of a Yogi	 N/A 	2023/07/18	Paramahansa Yogananda
+B1122	D556	Gone Girl	 N/A 	2023/07/12	Gillian Flynn
+B1123	L261	All Quiet on the Western Front	 N/A 	2023/07/23	Erich Maria Remarque
+B1124	Y409	The Bermuda Triangle	 N/A 	2023/07/19	Charles Berlitz
+B1125	W818	Things Fall Apart	20217	2023/07/13	Chinua Achebe
+B1126	C787	Animal Farm	11826	2023/07/12	George Orwell
+B1127	S458	Wolf Totem	36783	2023/07/25	Jiang Rong
+B1128	T202	The Happy Hooker: My Own Story	94024	2023/07/14	Xaviera Hollander
+B1129	K964	Jaws	97818	2023/07/23	Peter Benchley
+B1130	D159	Love You Forever	50828	2023/07/19	Robert Munsch
+B1131	L671	The Women's Room	17950	2023/07/17	Marilyn French
+B1132	K161	What to Expect When You're Expecting	 N/A 	2023/07/20	Arlene EisenbergandHeidi Murkoff
+B1133	N299	Adventures of Huckleberry Finn	 N/A 	2023/07/16	Mark Twain
+B1134	K215	The Secret Diary of Adrian Mole/ Aged 13 3/4	 N/A 	2023/07/22	Sue Townsend
+B1135	Y397	Pride and Prejudice	 N/A 	2023/07/21	Jane Austen
+B1136	R741	Kon/Tiki: Across the Pacific in a Raft	 N/A 	2023/07/23	Thor Heyerdahl
+B1137	C629	The Good Soldier Svejk	 N/A 	2023/07/17	Jaroslav Hasek
+B1138	N157	Where the Wild Things Are	 N/A 	2023/07/22	Maurice Sendak
+P1139	P008	MoneySense Magazine	72614	2023/07/16
+P1140	P008	MoneySense Magazine	48096	2023/07/17
+P1141	P008	MoneySense Magazine	89325	2023/07/17
+P1142	P008	MoneySense Magazine	 N/A 	2023/07/11
+P1143	P008	MoneySense Magazine	70451	2023/07/24
+P1144	P008	MoneySense Magazine	 N/A 	2023/07/18
+P1145	P008	MoneySense Magazine	33074	2023/07/17
+B1146	I973	The Power of Positive Thinking	 N/A 	2023/07/16	Norman Vincent Peale
+B1147	L645	The Secret	27720	2023/07/17	Rhonda Byrne
+B1148	B320	Fear of Flying	77938	2023/07/24	Erica Jong
+B1149	K887	Dune	25982	2023/07/11	Frank Herbert
+B1150	H138	Charlie and the Chocolate Factory	39496	2023/07/18	Roald Dahl
+B1151	P508	The Naked Ape	42832	2023/07/22	Desmond Morris
+B1152	W726	Totto/chan/ the Little Girl at the Window	69687	2023/07/19	Tetsuko Kuroyanagi
+B1153	L207	Matilda	 N/A 	2023/07/15	Roald Dahl
+B1154	O898	The Book Thief	 N/A 	2023/07/23	Markus Zusak
+B1155	S595	The Horse Whisperer	 N/A 	2023/07/23	Nicholas Evans
+B1156	O807	Goodnight Moon	 N/A 	2023/07/24	Margaret Wise Brown
+B1157	U823	The Neverending Story	 N/A 	2023/07/22	Michael Ende
+B1158	S159	Fifty Shades of Grey	 N/A 	2023/07/21	E. L. James
+B1159	M201	The Outsiders	 N/A 	2023/07/13	S. E. Hinton
+B1160	H423	Guess How Much I Love You	 N/A 	2023/07/22	Sam McBratney
+B1161	G743	Sh?gun	85725	2023/07/18	James Clavell
+B1162	K764	The Poky Little Puppy	71507	2023/07/24	Janette Sebring Lowrey
+B1163	Z222	The Pillars of the Earth	30945	2023/07/17	Ken Follett
+B1164	D650	How to Win Friends and Influence People	35147	2023/07/17	Dale Carnegie
+B1165	Y296	Perfume	83613	2023/07/15	Patrick Sskind
+B1166	O754	The Grapes of Wrath	98504	2023/07/17	John Steinbeck
+B1167	L111	The Shadow of the Wind	46030	2023/07/15	Carlos Ruiz Zafn
+B1168	L954	Interpreter of Maladies	13591	2023/07/14	Jhumpa Lahiri
+B1169	Y471	Becoming	53305	2023/07/20	Michelle Obama
+B1170	U633	The Hitchhiker's Guide to the Galaxy	32505	2023/07/17	Douglas Adams
+B1171	W733	Tuesdays with Morrie	 N/A 	2023/07/18	Mitch Albom
+B1172	J278	God's Little Acre	 N/A 	2023/07/14	Erskine Caldwell
+B1173	M576	Follow Your Heart	 N/A 	2023/07/24	Susanna Tamaro
+B1174	Z409	A Wrinkle in Time	 N/A 	2023/07/22	Madeleine L'Engle
+B1175	F213	Long Walk to Freedom	 N/A 	2023/07/16	Nelson Mandela
+B1176	Q183	The Old Man and the Sea	 N/A 	2023/07/23	Ernest Hemingway
+B1177	V418	Life After Life	 N/A 	2023/07/21	Raymond Moody
+B1178	O117	Me Before You	 N/A 	2023/07/15	Jojo Moyes
+B1179	M852	Norwegian Wood	44911	2023/07/22	Haruki Murakami
+P1180	P004	Hello! Canada Magazine	89606	2023/07/11
+P1181	P006	Hello! Canada Magazine	34087	2023/07/24
+P1182	P006	Hello! Canada Magazine	91257	2023/07/18
+P1183	P006	Hello! Canada Magazine	 N/A 	2023/07/17
+P1184	P006	Hello! Canada Magazine	15853	2023/07/25
+P1185	P006	Hello! Canada Magazine	 N/A 	2023/07/18
+P1186	P006	Hello! Canada Magazine	77163	2023/07/22
+P1187	P006	Hello! Canada Magazine	19525	2023/07/15
+P1188	P006	Hello! Canada Magazine	80506	2023/07/18
+P1189	P006	Hello! Canada Magazine	64345	2023/07/23
+P1190	P006	Hello! Canada Magazine	63664	2023/07/12
+P1191	P006	Hello! Canada Magazine	 N/A 	2023/07/12
+P1192	P006	Hello! Canada Magazine	83701	2023/07/20
+P1193	P006	Hello! Canada Magazine	67334	2023/07/16
+B1194	U158	Peyton Place	49730	2023/07/19	Grace Metalious
+B1195	Y966	The Plague	28406	2023/07/24	Albert Camus
+B1196	T555	No Longer Human	15056	2023/07/13	Osamu Dazai
+B1197	P459	Man's Search for Meaning	87325	2023/07/20	Viktor Frankl
+B1198	S478	The Divine Comedy	37489	2023/07/15	Dante Alighieri
+B1199	O151	The Prophet	66378	2023/07/16	Kahlil Gibran
+B1200	G990	The Exorcist	91012	2023/07/23	William Peter Blatty
+B1201	X564	The Gruffalo	76377	2023/07/19	Julia Donaldson
+B1202	R558	Fifty Shades Darker	22675	2023/07/18	E. L. James
+B1203	O741	Ronia/ the Robber's Daughter	 N/A 	2023/07/21	Astrid Lindgren
+B1204	I551	The Cat in the Hat	 N/A 	2023/07/22	Dr. Seuss
+B1205	V392	Diana: Her True Story	 N/A 	2023/07/23	Andrew Morton
+B1206	L677	The Help	 N/A 	2023/07/12	Kathryn Stockett
+B1207	U200	Catch/22	 N/A 	2023/07/15	Joseph Heller
+B1208	V547	The Stranger	 N/A 	2023/07/16	Albert Camus
+B1209	T740	Eye of the Needle	 N/A 	2023/07/10	Ken Follett
+B1210	G142	The Lovely Bones	 N/A 	2023/07/22	Alice Sebold
+B1211	I769	Wild Swans	32345	2023/07/23	Jung Chang
+B1212	F333	Santa Evita	54099	2023/07/23	Toms Eloy Martnez
+B1213	X737	Night	88228	2023/07/22	Elie Wiesel
+B1214	Y316	Confucius from the Heart	24780	2023/07/18	Yu Dan
+B1215	T262	The Total Woman	68109	2023/07/14	Marabel Morgan
+B1216	W401	Knowledge/value Revolution	69282	2023/07/16	Taichi Sakaiya
+B1217	V594	Problems in China's Socialist Economy	97800	2023/07/25	Xue Muqiao
+B1218	E106	What Color Is Your Parachute?	33009	2023/07/20	Richard Nelson Bolles
+B1219	J633	The Dukan Diet	29260	2023/07/20	Pierre Dukan
+B1220	C194	The Joy of Sex	 N/A 	2023/07/21	Alex Comfort
+B1221	M791	The Gospel According to Peanuts	 N/A 	2023/07/18	Robert L. Short
+B1222	V105	Life of Pi	 N/A 	2023/07/15	Yann Martel
+B1223	W580	The Giver	 N/A 	2023/07/14	Lois Lowry
+B1224	N950	The Front Runner	 N/A 	2023/07/17	Patricia Nell Warren
+B1225	D951	The Goal	 N/A 	2023/07/18	Eliyahu M. Goldratt
+B1226	P605	Fahrenheit 451	 N/A 	2023/07/12	Ray Bradbury
+B1227	N368	Angela's Ashes	 N/A 	2023/07/11	Frank McCourt
+B1228	T113	The Story of My Experiments with Truth	59505	2023/07/10	Mohandas Karamchand Gandhi
+B1229	T506	Bridget Jones's Diary	69410	2023/07/17	Helen Fielding
+B1230	T343	Harry Potter	65205	2023/07/19	J. K. Rowling
+B1231	F311	Goosebumps	17539	2023/07/10	R. L. Stine
+B1232	Y690	Perry Mason	28218	2023/07/15	Erle Stanley Gardner
+B1233	K460	Berenstain Bears	78200	2023/07/12	Stan and Jan Berenstain
+B1234	M671	Choose Your Own Adventure	27792	2023/07/25	Various authors
+B1235	P727	Diary of a Wimpy Kid	91885	2023/07/22	Jeff Kinney
+B1236	X982	Sweet Valley High	74095	2023/07/25	Francine Pascaland ghostwriters
+B1237	S868	Noddy	19857	2023/07/24	Enid Blyton
+B1238	D155	Nancy Drew	28526	2023/07/15	Various authors asCarolyn Keene
+B1239	K424	The Railway Series	75067	2023/07/13	Rev. W. Awdry/Christopher Awdry
+B1240	Y569	San/Antonio	21794	2023/07/13	Frdric Dard
+B1241	M813	Robert Langdon	 N/A 	2023/07/10	Dan Brown
+B1242	Q779	The Baby/sitters Club	 N/A 	2023/07/21	Ann Martin
+B1243	Y951	Twilight	 N/A 	2023/07/25	Stephenie Meyer
+B1244	B974	Star Wars	 N/A 	2023/07/18	Various authors
+B1245	C663	Little Critter	 N/A 	2023/07/11	Mercer Mayer
+B1246	B953	Peter Rabbit	 N/A 	2023/07/17	Beatrix Potter
+B1247	I318	Fifty Shades	 N/A 	2023/07/12	E. L. James
+B1248	V353	American Girl	 N/A 	2023/07/20	Various authors
+B1249	O485	Geronimo Stilton	62861	2023/07/24	Elisabetta Damiand ghostwriters
+B1250	M996	Chicken Soup for the Soul	37949	2023/07/21	Jack Canfield/Mark Victor Hansen
+B1251	K954	Clifford the Big Red Dog	73358	2023/07/21	Norman Bridwell
+B1252	I715	Frank Merriwell	78859	2023/07/11	Gilbert Patten
+B1253	D848	Dirk Pitt	13282	2023/07/23	Clive Cussler
+B1254	L724	Musashi	74367	2023/07/25	Eiji Yoshikawa
+B1255	P734	The Chronicles of Narnia	16623	2023/07/20	C. S. Lewis
+B1256	D855	Mr. Men	39972	2023/07/10	Roger Hargreaves/Adam Hargreaves
+B1257	H554	The Hunger Games trilogy	30930	2023/07/13	Suzanne Collins
+B1258	U134	James Bond	12755	2023/07/23	Ian Fleming
+P1259	P001	The Toronto Star	34037	2023/07/17
+P1260	P001	The Toronto Star	39710	2023/07/11
+P1261	P001	The Toronto Star	 N/A 	2023/07/24
+P1262	P001	The Toronto Star	13059	2023/07/18
+P1263	P001	The Toronto Star	61842	2023/07/17
+P1264	P001	The Toronto Star	 N/A 	2023/07/25
+P1265	P001	The Toronto Star	26742	2023/07/18
+P1266	P001	The Toronto Star	82938	2023/07/22
+P1267	P001	The Toronto Star	68014	2023/07/15
+P1268	P001	The Toronto Star	 N/A 	2023/07/18
+P1269	P001	The Toronto Star	42166	2023/07/23
+P1270	P001	The Toronto Star	98201	2023/07/12
+P1271	P001	The Toronto Star	34078	2023/07/12
+P1272	P001	The Toronto Star	 N/A 	2023/07/20
+P1273	P001	The Toronto Star	86711	2023/07/16
+P1274	P001	The Toronto Star	52095	2023/07/17
+P1275	P001	The Toronto Star	 N/A 	2023/07/17
+P1276	P001	The Toronto Star	72323	2023/07/11
+P1277	P001	The Toronto Star	81467	2023/07/24
+P1278	P001	The Toronto Star	44322	2023/07/18
+P1279	P001	The Toronto Star	 N/A 	2023/07/17
+P1280	P001	The Toronto Star	84453	2023/07/25
+P1281	P001	The Toronto Star	 N/A 	2023/07/18
+P1282	P001	The Toronto Star	57952	2023/07/22
+P1283	P001	The Toronto Star	65352	2023/07/15
+P1284	P001	The Toronto Star	59731	2023/07/18
+P1285	P001	The Toronto Star	 N/A 	2023/07/23
+P1286	P001	The Toronto Star	87403	2023/07/12
+P1287	P001	The Toronto Star	63899	2023/07/12
+P1288	P001	The Toronto Star	 N/A 	2023/07/20
+P1289	P001	The Toronto Star	34584	2023/07/16
+P1290	P001	The Toronto Star	 N/A 	2023/07/17
+P1291	P001	The Toronto Star	23119	2023/07/17
+P1292	P001	The Toronto Star	38659	2023/07/11
+P1293	P001	The Toronto Star	 N/A 	2023/07/24
+P1294	P001	The Toronto Star	35869	2023/07/18
+P1295	P001	The Toronto Star	 N/A 	2023/07/17
+P1296	P001	The Toronto Star	39753	2023/07/25
+P1297	P001	The Toronto Star	26886	2023/07/18
+P1298	P001	The Toronto Star	72671	2023/07/22
+P1299	P001	The Toronto Star	 N/A 	2023/07/15
+P1300	P001	The Toronto Star	48156	2023/07/18
+P1301	P001	The Toronto Star	92226	2023/07/23
+P1302	P001	The Toronto Star	72803	2023/07/12
+P1303	P001	The Toronto Star	47217	2023/07/12
+P1304	P001	The Toronto Star	 N/A 	2023/07/20
+P1305	P001	The Toronto Star	 N/A 	2023/07/16
+P1306	P001	The Toronto Star	98926	2023/07/17
+P1307	P001	The Toronto Star	 N/A 	2023/07/17
+B1308	V363	Martine	95794	2023/07/19	Gilbert Delahaye/Marcel Marlier
+B1309	T956	Millennium	32418	2023/07/17	Stieg Larsson/David Lagercrantz
+B1310	C902	A Song of Ice and Fire	13881	2023/07/17	George R. R. Martin
+B1311	U820	Discworld	 N/A 	2023/07/16	Terry Pratchett
+B1312	R242	Nijntje	 N/A 	2023/07/11	Dick Bruna
+B1313	W452	Alex Cross	 N/A 	2023/07/25	James Patterson
+B1314	R141	Anpanman	 N/A 	2023/07/15	Takashi Yanase
+B1315	E505	Captain Underpants	 N/A 	2023/07/22	Dav Pilkey
+B1316	D307	Fear Street	 N/A 	2023/07/24	R. L. Stine
+B1317	P601	Pippi Longstocking	 N/A 	2023/07/17	Astrid Lindgren
+B1318	Z256	The Vampire Chronicles	 N/A 	2023/07/11	Anne Rice
+B1319	P888	The Wheel of Time	47315	2023/07/24	Robert Jordan/Brandon Sanderson
+B1320	O220	OSS 117	74391	2023/07/18	Jean Bruce
+B1321	O514	Winnie/the/Pooh	86764	2023/07/17	A. A. Milne; illustrated byE. H. Shepard
+B1322	W758	Magic Tree House series	38222	2023/07/25	Mary Pope Osborne
+B1323	W722	Left Behind	18232	2023/07/18	Tim LaHaye/Jerry B. Jenkins
+B1324	U147	A Series of Unfortunate Events	47436	2023/07/22	Lemony SnicketakaDaniel Handler
+B1325	L222	Little House on the Prairie	98737	2023/07/15	Laura Ingalls Wilder
+B1326	P604	Jack Reacher	30467	2023/07/18	Lee Child
+B1327	F365	The Magic School Bus	34077	2023/07/23	Joanna Cole/ illustrated byBruce Degen
+B1328	P307	Where's Wally?	11089	2023/07/12	Martin Handford
+B1329	Y853	Men Are from Mars/ Women Are from Venus	98905	2023/07/12	John Gray
+B1330	C631	The Hardy Boys	42472	2023/07/20	Various authors asFranklin W. Dixon
+B1331	M406	The Bobbsey Twins	37365	2023/07/16	Various authors asLaura Lee Hope
+B1332	V259	Tarzan	76029	2023/07/17	Edgar Rice Burroughs
+P1333	S003	News	 N/A 	2023/11/13

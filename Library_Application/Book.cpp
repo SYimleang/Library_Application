@@ -6,7 +6,7 @@ Book::Book() {
 	m_author = nullptr;
 }
 
-/* Overload constructor. Copy receive Book object to current object. */
+/* Copy constructor. Copy receive Book object to current object. */
 Book::Book(const Book& src) : Publication(src) {
 
 	// Check if author's name is exists, then deallocate author's name attribute and set to null.
@@ -20,7 +20,7 @@ Book::Book(const Book& src) : Publication(src) {
 	strcpy(m_author, src.m_author);
 }
 
-/* Overload assign operator. Copy receive Book object to current object. */
+/* Copy assignment operator. Copy receive Book object to current object. */
 Book& Book::operator=(const Book& src) {
 
 	// Invoke assign operator of the Base class.
