@@ -83,80 +83,88 @@ int LibApp::search(int searchType) {
 	// Getting the type of publication to search for from the user
 	selectedType = m_publicType.run();
 
-	// If selected type is 1, it will sets the publication type to 'B'.
-	if (selectedType == 1) {
-		typeChar = 'B';
-	}
+	if(selectedType == 1 || selectedType == 2){
+		// If selected type is 1, it will sets the publication type to 'B'.
+		if (selectedType == 1) {
+			typeChar = 'B';
+		}
 
-	// If selected type is 2, it will sets the publication type to 'P'.
-	else if (selectedType == 2) {
-		typeChar = 'P';
-	}
+		// If selected type is 2, it will sets the publication type to 'P'.
+		else if (selectedType == 2) {
+			typeChar = 'P';
+		}
+	
+		// Getting the title from input to search the PPA.
+		std::cin.ignore(1000, '\n');
+		std::cout << "Publication Title: ";
+		std::cin.getline(title, 256);
 
-	// Getting the title from input to search the PPA.
-	std::cin.ignore(1000, '\n');
-	std::cout << "Publication Title: ";
-	std::cin.getline(title, 256);
+		// If search type is 1, it will searches all publications.
+		if (searchType == 1) {
 
-	// If search type is 1, it will searches all publications.
-	if (searchType == 1) {
+			// Loop through all Loaded Publication.
+			for (i = 0; i < m_NOLP; i++) {
 
-		// Loop through all Loaded Publication.
-		for (i = 0; i < m_NOLP; i++) {
-
-			// Check if PPA is valid, then insert object into pubSel object to generate a selector to choose an element.
-			if (m_PPA[i]->operator==(title) && typeChar == m_PPA[i]->type() && m_PPA[i]->getRef() != 0) {
-				pubSel << m_PPA[i];
+				// Check if PPA is valid, then insert object into pubSel object to generate a selector to choose an element.
+				if (m_PPA[i]->operator==(title) && typeChar == m_PPA[i]->type() && m_PPA[i]->getRef() != 0) {
+					pubSel << m_PPA[i];
+				}
 			}
 		}
-	}
 
-	// If search type is 2, it will searches only those publications which are on loan by library members.
-	else if (searchType == 2) {
+		// If search type is 2, it will searches only those publications which are on loan by library members.
+		else if (searchType == 2) {
 
-		// Loop through all Loaded Publication.
-		for (i = 0; i < m_NOLP; i++) {
+			// Loop through all Loaded Publication.
+			for (i = 0; i < m_NOLP; i++) {
 
-			// Check if PPA is valid, then insert object into pubSel object to generate a selector to choose an element.
-			if (m_PPA[i]->operator==(title) && m_PPA[i]->onLoan() && typeChar == m_PPA[i]->type() && m_PPA[i]->getRef() != 0) {
-				pubSel << m_PPA[i];
+				// Check if PPA is valid, then insert object into pubSel object to generate a selector to choose an element.
+				if (m_PPA[i]->operator==(title) && m_PPA[i]->onLoan() && typeChar == m_PPA[i]->type() && m_PPA[i]->getRef() != 0) {
+					pubSel << m_PPA[i];
+				}
 			}
 		}
-	}
 
-	// If search type is 3, it will searches only those publications which are not on loan.
-	else if (searchType == 3) {
+		// If search type is 3, it will searches only those publications which are not on loan.
+		else if (searchType == 3) {
 
-		// Loop through all Loaded Publication.
-		for (i = 0; i < m_NOLP; i++) {
+			// Loop through all Loaded Publication.
+			for (i = 0; i < m_NOLP; i++) {
 
-			// Check if PPA is valid, then insert object into pubSel object to generate a selector to choose an element.
-			if (m_PPA[i]->operator==(title) && !m_PPA[i]->onLoan() && typeChar == m_PPA[i]->type() && m_PPA[i]->getRef() != 0) {
-				pubSel << m_PPA[i];
+				// Check if PPA is valid, then insert object into pubSel object to generate a selector to choose an element.
+				if (m_PPA[i]->operator==(title) && !m_PPA[i]->onLoan() && typeChar == m_PPA[i]->type() && m_PPA[i]->getRef() != 0) {
+					pubSel << m_PPA[i];
+				}
 			}
 		}
-	}
 
-	// If matches are found, sort the result and get the user's selection.
-	if (pubSel) {
-		pubSel.sort();
-		libRef = pubSel.run();
+		// If matches are found, sort the result and get the user's selection.
+		if (pubSel) {
+			pubSel.sort();
+			libRef = pubSel.run();
 
-		// If serial number of publication object is valid, then display the serial number of publication object.
-		if (libRef > 0)
-		{
-			std::cout << *getPub(libRef) << std::endl;
+			// If serial number of publication object is valid, then display the serial number of publication object.
+			if (libRef > 0)
+			{
+				std::cout << *getPub(libRef) << std::endl;
+			}
+
+			// If serial number of publication is invalid, then display error message.
+			else {
+				std::cout << "Aborted!" << std::endl;
+			}
 		}
 
-		// If serial number of publication is invalid, then display error message.
+		// If matches are not found, then return a message.
 		else {
-			std::cout << "Aborted!" << std::endl;
+			std::cout << "No matches found!" << std::endl;
 		}
 	}
-
-	// If matches are not found, then return a message.
+	// If input is fail, then abort the publication.
 	else {
-		std::cout << "No matches found!" << std::endl;
+		std::cin.ignore(1000, '\n');
+		std::cin.clear();
+		std::cout << "Aborted!" << std::endl;
 	}
 
 	// Return the library reference number.
