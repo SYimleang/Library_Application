@@ -127,7 +127,7 @@ std::ostream& Publication::write(std::ostream& os) const {
 
 		// If address is not same, then print as no exist format.
 		else {
-			os << type() << m_libRef << "\t" << m_shelfId << "\t" << m_title << "\t";
+			os << type() << "\t" << m_libRef << "\t" << m_shelfId << "\t" << m_title << "\t";
 			if (m_membership == 0) {
 				os << " N/A ";
 			}
