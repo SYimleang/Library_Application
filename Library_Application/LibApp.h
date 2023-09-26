@@ -1,6 +1,7 @@
 #ifndef LIBAPP_H_
 #define LIBAPP_H_
 
+#include <iostream>
 #include <fstream>
 #include "Menu.h"
 #include "Publication.h"

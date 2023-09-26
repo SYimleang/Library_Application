@@ -1,7 +1,9 @@
 #ifndef MENU_H_
 #define MENU_H_
-#define MAX_MENU_ITEMS 20
+
 #include <iostream>
+
+#define MAX_MENU_ITEMS 20
 
 class MenuItem {
 	char* m_content;

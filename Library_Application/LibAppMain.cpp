@@ -11,7 +11,7 @@ void runApp(const char* filename) {
    // creating original file name
    while(filename[i]) original[21u + i] = filename[i++];
    original[21u + i] = char(0);
-   // copiying original values to data file;
+   // Copying original values to data file;
    std::ofstream outFile(filename);
    std::ifstream inFile(original);
    while(inFile.get(ch)) {
