@@ -6,3 +6,7 @@ The Library Management System Application serves as a comprehensive system for t
 ## Features
 - Efficiently track and manage publications.
 - Support for both books and periodicals.
+
+<p align="center">
+  <img src="Running_Example.png" alt="Library Application Screenshot" />
+</p>
