@@ -17,10 +17,12 @@ class PublicationSelector {
 public:
    PublicationSelector(const char* title = "Select a publication: ", int pageSize = 15);
 
-   // Rules of three
+   // Rules of five
    ~PublicationSelector();                                              // Destructor
-   PublicationSelector(const PublicationSelector&) = delete;            // Copy constructor
-   PublicationSelector& operator=(const PublicationSelector&) = delete; // Copy assignment operator
+   PublicationSelector(const PublicationSelector&) = delete;            // Prevent copy constructor
+   PublicationSelector& operator=(const PublicationSelector&) = delete; // Prevent Copy assignment operator
+   PublicationSelector(PublicationSelector&&) = delete;                 // Prevent Move constructor
+   PublicationSelector& operator=(PublicationSelector&&) = delete;      // Prevent Move assignment operator
 
    operator bool()const;   // Return true menu is not empty 
    void reset();           // Clears all the publications and sets the selector empty and ready to be refilled

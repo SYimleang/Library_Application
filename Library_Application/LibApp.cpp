@@ -1,4 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <iomanip>
+#include <fstream>
 #include "LibApp.h"
 
 bool LibApp::confirm(const char* message) {

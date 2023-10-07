@@ -14,12 +14,14 @@ class Publication : public Streamable {
 	Date m_date;						// Date object to hold date is used for the publish date of the item.
 
 public:
-	Publication();										// Default constructor
+	Publication();									// Default constructor
 
-	// Rules of three
-	~Publication();										// Destructor
-	Publication(const Publication& src);				// Copy constructor
-	Publication& operator=(const Publication& src);		// Copy assign operator
+	// Rules of five
+	~Publication();									// Destructor
+	Publication(const Publication&);				// Copy constructor
+	Publication& operator=(const Publication&);		// Copy assign operator
+	Publication(Publication&&);						// Move constructor
+	Publication& operator=(Publication&&);			// Move assign operator
 
 	virtual void set(int member_id);	// Sets the membership attribute to either zero or a five-digit integer.
 	void setRef(int value);				// Sets the **libRef** attribute value

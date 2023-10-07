@@ -11,10 +11,12 @@ class MenuItem {
 	MenuItem();						// Default constructor.						
 	MenuItem(const char* title);	// Constructor with one argument.
 
-	// Rules of three
-	~MenuItem();										// Destructor.
-	MenuItem(const MenuItem& src) = delete;				// Prevent copying the instance of a class.
-	MenuItem& operator=(const MenuItem& src) = delete;	// Prevent assigning the instance of a class.
+	// Rules of five
+	~MenuItem();										// Destructor
+	MenuItem(const MenuItem& src) = delete;				// Prevent copy constructor
+	MenuItem& operator=(const MenuItem& src) = delete;	// Prevent copy assignment operator
+	MenuItem(MenuItem&&) = delete;						// Prevent move constructor
+	MenuItem& operator=(MenuItem&&) = delete;			// Prevent move assignment operator
 
 	bool validate() const;			// Validate content method.
 	operator bool() const;			// Overload bool type conversions operator.

@@ -1,7 +1,6 @@
 #ifndef BOOK_H_
 #define BOOK_H_
 #include <iostream>
-#include <iomanip>
 #include "Publication.h"
 
 class Book : public Publication{
@@ -9,10 +8,12 @@ class Book : public Publication{
 public:
 	Book();								// Default constructor.
 
-	// Rules of three
-	~Book();							// Destructor.
-	Book(const Book& src);				// Copy constructor.
-	Book& operator=(const Book& src);	// Overload copy assign operator.
+	// Rules of five
+	~Book();							// Destructor
+	Book(const Book& src);				// Copy constructor
+	Book& operator=(const Book& src);	// Copy assignment operator
+	Book(Book&&);						// Move constructor
+	Book& operator=(Book&&);			// Move assignment operator
 
 	char type() const;								// Always return 'B'.
 	std::ostream& write(std::ostream& os) const;	// Method to check the os argument is a console IO object of the book object and display the values as format.

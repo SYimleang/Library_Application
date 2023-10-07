@@ -2,7 +2,6 @@
 #define LIBAPP_H_
 
 #include <iostream>
-#include <fstream>
 #include "Menu.h"
 #include "Publication.h"
 #include "Lib.h"
@@ -34,9 +33,11 @@ public:
     LibApp(const char* fileName);   // Constructor with C-String parameter (filename).
 
     // Rules of three
-    ~LibApp();                                      // Destructor.
-    LibApp(const LibApp& src) = delete;             // Prevent copying the instance of a class.
-    LibApp& operator=(const LibApp& src) = delete;  // Prevent assigning the instance of a class.
+    ~LibApp();                                      // Destructor
+    LibApp(const LibApp& src) = delete;             // Prevent copy constructor
+    LibApp& operator=(const LibApp& src) = delete;  // Prevent copy assignment
+    LibApp(LibApp&&) = delete;                      // Prevent move constructor
+    LibApp& operator=(LibApp&&) = delete;           // Prevent move assignment
 
     void run();     // The run method is the main application driver.
 };

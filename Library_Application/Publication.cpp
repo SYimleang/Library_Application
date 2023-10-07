@@ -1,5 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
 #include <iomanip>
+#include <cstring>
 #include "Publication.h"
 
 /* Default constructor. Set all attributes to empty state. */ 
@@ -16,12 +18,12 @@ Publication::~Publication() {
 	delete[] m_title;
 }
 
-/* Overload constructor. Copy receive Publication object to current object. */
+/* Copy constructor. */
 Publication::Publication(const Publication& src) {
 	*this = src;
 }
 
-/* Overload assign operator. Copy receive Publication object to current object. */
+/* Copy assign operator. */
 Publication& Publication::operator=(const Publication& src) {
 
 	// Check if title of current object is exists.
@@ -49,6 +51,33 @@ Publication& Publication::operator=(const Publication& src) {
 	// If current title of current object does not exist, then set to null.
 	else {
 		m_title = nullptr;
+	}
+	return *this;
+}
+
+/* Move constructor. */
+Publication::Publication(Publication && src)
+{
+	*this = std::move(src);
+}
+
+/* */
+Publication& Publication::operator=(Publication&& src) {
+	// Self assignment check.
+	if(this != &src){
+		// Cleanup
+		delete[] m_title;
+
+		// Shallow copy members
+		for (int i = 0; i < 5; ++i)
+			m_shelfId[i] = src.m_shelfId[i];
+		m_membership = src.m_membership;
+		m_libRef = src.m_libRef;
+		m_date = src.m_date;
+
+		// Move resource
+		strcpy(m_title, src.m_title);
+		src.m_title = nullptr;
 	}
 	return *this;
 }
